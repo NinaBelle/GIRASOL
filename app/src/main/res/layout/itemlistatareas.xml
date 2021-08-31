@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="3"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:id="@+id/imagenApp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/nombreApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre App"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#0C0C0C"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/potenciaApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Potencia: "/>
+        <TextView
+            android:id="@+id/tiempoApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiempo: "/>
+        <TextView
+            android:id="@+id/interaccionApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interaccion: "/>
+        <TextView
+            android:id="@+id/repeApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Repeticiones: "/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="3"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar >"
+            android:textSize="20sp"
+            android:textColor="#3F51B5"
+            android:background="#E0E8EC"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

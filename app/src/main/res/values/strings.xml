@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GIRaSOL v1.0</string>
+    <string name="tab_text_1">Info</string>
+    <string name="tab_text_2">Tareas</string>
+    <string name="tab_text_3">Parámetros</string>
+    <string name="tab_text_4">Energía</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aceptar">Solicitar Permiso</string>
+    <string name="cancel">Cancelar</string>
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTareaFragment">
+
+    <!--  -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/respuesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar parametros de Tarea:"
+            android:textSize="25dp"
+            android:textColor="#E90C0C"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/txtnombreTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre Aplicacion: "
+            android:layout_below="@+id/respuesta"
+            android:layout_marginLeft="20dp"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtElnombTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="El nombre"
+            android:layout_toRightOf="@+id/txtnombreTA"
+            android:layout_below="@+id/respuesta"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/bevan"
+            android:textColor="#0C0C0C"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txtpotTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Potencia (W):"
+            android:layout_below="@+id/txtnombreTA"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etPotencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Ingrese potencia en Watts"
+            android:inputType="number|numberDecimal"
+            android:layout_below="@+id/txtElnombTA"
+            android:layout_toRightOf="@+id/txtpotTA"/>
+
+        <TextView
+            android:id="@+id/txttiempoTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiempo(min):"
+            android:layout_below="@+id/txtpotTA"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etTiempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPotencia"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txttiempoTA"
+            android:hint="Ingrese tiempo en minutos"
+            android:inputType="number|numberDecimal" />
+
+        <TextView
+            android:id="@+id/txtintTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interaccion:"
+            android:layout_below="@+id/txttiempoTA"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/etInteraccion"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Interaccion"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/etTiempo"
+            android:layout_toRightOf="@+id/txtintTA"/>
+
+        <TextView
+            android:id="@+id/txtrepeTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeticiones:"
+            android:layout_below="@+id/txtintTA"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/etInteraccion"
+            android:hint="Cantidad repeticiones"
+            android:inputType="number"
+            android:layout_toRightOf="@+id/txtrepeTA"/>
+
+        <Button
+            android:id="@+id/btnGuardarTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar Cambios"
+            android:layout_below="@+id/txtrepeTA"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/borde_redondo"
+            android:fontFamily="@font/artifika"
+            android:textColor="#070707"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+    </RelativeLayout>
+</ScrollView>
+</FrameLayout>

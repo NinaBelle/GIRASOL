@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListaTareasFragment"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btnCarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cargar Tareas"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAgregar"
+            android:text="Elegir Tareas"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/borde_redondo"
+            android:fontFamily="@font/artifika"
+            android:textColor="#080809"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGuard"
+            android:text="Guardar"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/borde_redondo"
+            android:fontFamily="@font/artifika"
+            android:textColor="#080809"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/etiqSelecc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnAgregar"
+            android:text="Seleccione las tareas:"
+            android:fontFamily="@font/bevan"
+            android:textColor="#E90C0C"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="invisible"/>
+
+
+
+        <ListView
+            android:id="@+id/tareas_LV"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/etiqSelecc"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="invisible">
+        </ListView>
+        <ListView
+            android:id="@+id/listaT_Edit"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/etiqSelecc"
+            android:visibility="visible"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+        </ListView>
+    </RelativeLayout>
+
+</FrameLayout>

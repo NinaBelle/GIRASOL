@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/almendra</item>
+        <item>@font/artifika</item>
+        <item>@font/asset</item>
+        <item>@font/bevan</item>
+        <item>@font/cormorant_unicase_light</item>
+        <item>@font/finger_paint</item>
+        <item>@font/vidaloka</item>
+    </array>
+</resources>
